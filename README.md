@@ -11,4 +11,4 @@ Installation:
 Examples folder contains all files needed for MD to:
 
 - Nucleate and expand a fusion pore with two Syt1-C2B domain.
-- Induce a hemifusion diaphragm.
+- Induce hemifusion diaphragm.
