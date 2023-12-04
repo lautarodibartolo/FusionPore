@@ -1,0 +1,12 @@
+INCLUDE FILE=plumed_groups.dat
+
+# Repurposing the fusion pore expansion restraint for the hemifusion diaphragm
+hemifusionDiaphragm: FUSIONPOREEXPANSIONP UMEMBRANE=uMem LMEMBRANE=lMem TAILS=tails WATERS=tails PHOSPHATEOXYGENS=tails NSMEM=50 DSMEM=0.1 HMEM=0.25 VO=0.076879 D=1.5 H=0.1 RMAX=2.5 R0=0.6
+
+MOVINGRESTRAINT ...
+	ARG=hemifusionDiaphragm 
+	STEP0=0 AT0=0.6 KAPPA0=10000.0
+	STEP1=5000000 AT1=3.5 KAPPA1=10000.0
+...
+
+PRINT ARG=hemifusionDiaphragm FILE=colvar_hemifusion_diaphragm STRIDE=10

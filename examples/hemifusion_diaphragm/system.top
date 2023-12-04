@@ -1,0 +1,17 @@
+#include "toppar/martini_v3.0.0.itp"
+#include "toppar/martini_v3.0.0_ions_v1.itp"
+#include "toppar/martini_v3.0.0_phospholipids_v1.itp"
+#include "toppar/martini_v3.0.0_solvents_v1.itp"
+
+[ system ]
+; name
+Martini system
+
+[ molecules ]
+; name        number
+DOPC 920
+DOPS 104
+DOPC 920
+DOPS 104
+W 33090
+NA 208
